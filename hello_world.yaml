@@ -1,5 +1,5 @@
 - name: Hello world
-  host: localhost
+  hosts: localhost
   connection: local
   task:
   - name: print the defalt
