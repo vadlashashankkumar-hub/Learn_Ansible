@@ -1,0 +1,12 @@
+- name: Demo on variables
+  hosts: local
+  connection: local
+  vars:
+    name: "Shashank"
+    age: "29"
+    course: "DevSecOps"
+    duration: "4 months"
+  tasks:
+    - name: print the variables
+      debug:
+        msg: "Hi iam {{ name }}, and my age is {{ age }}. iam learning {{ course }} and the total duration for the course id {{ duration }}"

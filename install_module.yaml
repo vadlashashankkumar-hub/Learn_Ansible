@@ -1,6 +1,6 @@
 - name: Install and start nginx
   hosts: frontend
-  become: yes
+  become: yes #providing root/sudo access
   tasks:
   - name: Installing nginx
     package:
