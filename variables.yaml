@@ -9,4 +9,4 @@
   tasks:
     - name: print the variables
       debug:
-        msg: "Hi iam {{ student_name }}, and my age is {{ age }}. iam learning {{ course }} and the total duration for the course id {{ duration }}"
+        msg: "Hi iam {{ student_name }}, and my age is {{ age }}. iam learning {{ course }} and the total duration for the course is {{ duration }}"
