@@ -1,7 +1,7 @@
 - name: Hello world
   hosts: localhost
   connection: local
-  task:
+  tasks:
   - name: print the defalt
     ansible.builtin.debug:
 
