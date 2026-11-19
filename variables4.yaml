@@ -1,5 +1,6 @@
 - name: Passing variables through prompt
-  hosts: frontend
+  hosts: local
+  connection: local
   vars_prompt:
     - name: Username
       prompt: "Enter your username"
