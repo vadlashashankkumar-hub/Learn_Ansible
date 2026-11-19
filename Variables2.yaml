@@ -11,9 +11,7 @@
       debug:
         msg: "Hi iam {{ student_name }}, and my age is {{ age }}. iam learning {{ course }} and the total duration for the course is {{ duration }}"
 
-
-    
-    - name: print the variables
+    - name: print the variables2
       vars:
         student_name: "Ramesh"
         age: "29"
