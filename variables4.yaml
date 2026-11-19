@@ -1,0 +1,14 @@
+- name: Passing variables through prompt
+  hosts: frontend
+  vars_prompt:
+    - name: Username
+      prompt: "Enter your username"
+      private: false
+    - name: Password
+      prompt: "Enter your Password"
+      private: true
+
+  tasks:
+    - name: Printing the confidential information
+      debug:
+        msg: "Username is {{Username}} and Password is {{Password}}"
