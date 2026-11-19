@@ -1,5 +1,5 @@
 - name: Hello world
-  host: localhost
+  host: local
   connection: local
 
   task:
