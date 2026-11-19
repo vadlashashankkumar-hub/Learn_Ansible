@@ -1,3 +1,4 @@
+#passing task level variables
 - name: Demo on variables
   hosts: local
   connection: local
