@@ -4,4 +4,4 @@
 
   task:
   - name: print the defalt
-    debug:
+    ansible.builtin.debug:
