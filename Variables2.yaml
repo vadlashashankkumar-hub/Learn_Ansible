@@ -17,5 +17,5 @@
         age: "29"
         course: "DevSecOps"
         duration: "4 months"
-        debug:
-         msg: "Hi iam {{ student_name }}, and my age is {{ age }}. iam learning {{ course }} and the total duration for the course is {{ duration }}"
+      debug:
+        msg: "Hi iam {{ student_name }}, and my age is {{ age }}. iam learning {{ course }} and the total duration for the course is {{ duration }}"
