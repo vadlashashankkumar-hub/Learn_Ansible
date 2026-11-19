@@ -5,4 +5,7 @@
   - name: print the defalt
     ansible.builtin.debug:
 
-
+  tasks:
+  - name: print the message
+    debug:
+      msg: "Hi iam learning Ansible"
