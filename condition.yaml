@@ -9,10 +9,10 @@
   tasks:
     - name: Is even
       debug:
-        msg: "given number is even"
+        msg: "given number {{number}} is even"
       when: (number | int) % 2 == 0
 
     - name: Is odd
       debug:
-        msg: "given number is odd"
+        msg: "given number {{number}} is odd"
       when: (number | int) % 2 != 0
