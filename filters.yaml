@@ -2,25 +2,26 @@
   hosts: local
   connection: local
   vars:
-    Name:
+    name:
       - Vadla
       - Shashank
       - Kumar
-    topics: Linux, shell, ansible, Terraform
+    topics: "Linux, shell, ansible, Terraform"
     current_topic: Ansible
+
   tasks:
-   - name: print the name
-     debug:
-     msg: "Hi {{ person | default('Shanky') }}"
+    - name: Print the name
+      debug:
+        msg: "Hi {{ person | default('Shanky') }}"
 
-   - name: Convert strint to list
-     debug:
-     msg: "Topics are: {{ topics | split(',')}}"
+    - name: Convert string to list
+      debug:
+        msg: "Topics are: {{ topics | split(', ') }}"
 
-   - name: covert list to string
-     debug:
-     msg: "Name is {{ Name | join(' ')}}"
-   
-   - name: Covert to lower case
-     debug:
-     msg: " current_topic in lower case {{ current_topic | lower }}"
+    - name: Convert list to string
+      debug:
+        msg: "Name is {{ name | join(' ') }}"
+
+    - name: Convert to lower case
+      debug:
+        msg: "current_topic in lower case: {{ current_topic | lower }}"
