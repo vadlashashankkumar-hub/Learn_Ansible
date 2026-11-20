@@ -10,8 +10,8 @@
     - name: Is even
       debug:
         msg: "given number is even"
-        when: number%2==0
+        when: number % 2 == 0 
     - name: Is odd
       debug:
        msg: "given number is odd"
-      when: number % 2!=0
+      when: number % 2 != 0
