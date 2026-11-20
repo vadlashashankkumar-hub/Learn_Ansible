@@ -20,3 +20,7 @@
    - name: covert list to string
      debug:
      msg: "Name is {{ Name | join(' ')}}"
+   
+   - name: Covert to lower case
+     debug:
+     msg: " current_topic in lower case {{ current_topic | lower }}"
